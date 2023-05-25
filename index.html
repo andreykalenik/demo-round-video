@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .web-cam { 
+            position: relative;
+            text-align: center;    
+            width: 250px;
+            height: 250px;
+            border-radius: 125px;
+            -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        }
+
+        .demo-video {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: -125px;
+        left: -125px;
+        }
+        .demo{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+    </style>
+    <div class="demo">
+        <div>
+            <div>
+                <video width=500  controls loop autoplay playsinline >
+                    <source src="demo.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает встроенные видео :(
+                </video>
+            </div>
+        </div>
+        <div>
+            <div class="web-cam">
+                <video controls loop autoplay  playsinline class="demo-video" >
+                    <source src="demo.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает встроенные видео :(
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
